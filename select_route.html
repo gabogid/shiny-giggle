@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Reserva tu Pasaje</h1>
+  <form id="routeForm">
+    <label for="route">Ruta:</label>
+    <select id="route" name="route">
+      <option value="ruta1">Ruta 1</option>
+      <option value="ruta2">Ruta 2</option>
+      <option value="ruta3">Ruta 3</option>
+    </select><br><br>
+    <label for="date">Fecha de Viaje:</label>
+    <input type="date" id="date" name="date"><br><br>
+    <label for="passengerName">Nombre de Pasajero:</label>
+    <input type="text" id="passengerName" name="passengerName" required><br><br>
+    <label for="passengerLastName">Apellidos:</label>
+    <input type="text" id="passengerLastName" name="passengerLastName" required><br><br>
+    <label for="documentNumber">DNI (Número de Documento):</label>
+    <input type="text" id="documentNumber" name="documentNumber" required><br><br>
+    <label for="destination">Destino:</label>
+    <select id="destination" name="destination">
+      <option value="destino1">Destino 1</option>
+      <option value="destino2">Destino 2</option>
+      <option value="destino3">Destino 3</option>
+      <option value="destino4">Destino 4</option>
+      <option value="destino5">Destino 5</option>
+    </select><br><br>
+    <label for="ticketPrice">Precio del Pasaje:</label>
+    <select id="ticketPrice" name="ticketPrice">
+      <option value="50">50 USD</option>
+      <option value="75">75 USD</option>
+      <option value="100">100 USD</option>
+    </select><br><br>
+    <button id="selectRouteButton">Confirmar Reserva</button>
+  </form>
+  <script src="select_route.js"></script>
+</body>
+</html>
